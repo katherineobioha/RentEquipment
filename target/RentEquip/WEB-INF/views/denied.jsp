@@ -16,6 +16,8 @@
 		</c:if>
 	
 		<p class="message">Access denied!</p>
+		<p class="message">or Equipment Unavailable for rent or Equipment Not Found!</p>
+		
 		<a href="/login">Go back to login page</a> 
 		<h6><a href="javascript:window.history.back()">Back to last page</a></h6>
 	</body>

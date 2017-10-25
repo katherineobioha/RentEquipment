@@ -116,12 +116,7 @@ c
 	</tr>
 	<tr>
 		<td>
-			<form:label path="role">
-				<c><spring:message text="Role"/></c>
-			</form:label>
-		</td>
-		<td>
-			<form:input path="role" />
+			<form:input path="role" type = "hidden" />
 		</td>
 		<td><form:errors path="role" /></td>
 	</tr>
@@ -135,8 +130,9 @@ c
 		</td>
 	</tr>
 </table>	
-</div>
-</form:form>
 
+</form:form>
+<button><a href="<c:url value='/menu' />">Menu</a></button>
+</div>
 </body>
 </html>

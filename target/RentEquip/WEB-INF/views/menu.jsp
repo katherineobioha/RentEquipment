@@ -68,7 +68,7 @@ margin-left: 100px;
 </head>
 <body style ="background-color:black;" >
 <div>
-<time><ul><button><a href="<c:url value='/search' />">Rent Equipment</a> </button> </ul></time>
+<time><ul><li><button><a href="<c:url value='/search' />">Rent Equipment</a> </button></li><li><button><a href="<c:url value='/listUsers' />">View Users</a> </button></li> </ul></time>
 <article>
 <table style="width:100%">
   <tr>
@@ -91,10 +91,6 @@ margin-left: 100px;
     <th><a>Location:</a></th>
     <td><a>${ser.location}</a></td>
   </tr>
-  <tr>
-  <th><a>role:</a></th>
-    <td><a>${ser.role}</a></td>
-  </tr>
 </table>
   
    <dc><td style = width:><button><a href="<c:url value='/Person/update/${ser.ID}' />">Update</a></button></td></dc>
@@ -108,4 +104,33 @@ margin-left: 100px;
 
 
 </body>
+<footer>
+
+<div>
+ <a><h2>My Equipments</h2></a>
+ 
+ <c:if test="${!empty equipments}">
+	<table class="tg">
+	<tr>
+		<th width="80"><a>Manufacturer</a></th>
+		<th width="120"><a>Name</a></th>
+		<th width="120"><a>Taxonomy</a></th>
+		<th width="60"><a>Location</a></th>
+	</tr>
+	<c:forEach items="${equipments}" var="equip">
+		<tr>
+			<td><a>${equip.manufacturer}</a></td>
+			<td><a>${equip.name}</a></td>
+			<td><a>${equip.taxonomy}</a></td>
+			<td><a>${equip.location}</a></td>
+			<td><a href="<c:url value='/return/${equip.ID}' />" ><button>Return</button></a></td>
+			
+		</tr>
+	</c:forEach>
+	</table>
+</c:if>
+ 
+    <h6><a href="j_spring_security_logout">logout</a></h6>
+    </div>
+</footer>
 </html>

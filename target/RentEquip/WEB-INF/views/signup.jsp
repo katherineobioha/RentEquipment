@@ -117,12 +117,7 @@ c
 	</tr>
 	<tr>
 		<td>
-			<form:label path="role">
-				<c><spring:message text="Role"/></c>
-			</form:label>
-		</td>
-		<td>
-			<form:input path="role" />
+			<form:input path="role" value = "2" type = "hidden" />
 		</td>
 		<td><c><form:errors path="role" /><c></td>
 	</tr>
