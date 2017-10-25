@@ -61,7 +61,7 @@
 				</beans:prop>
 				<beans:prop key="hibernate.show_sql">true</beans:prop>
 				<beans:prop key="hibernate.search.default.directory_provider">org.hibernate.search.store.impl.FSDirectoryProvider</beans:prop>
-			<beans:prop key="hibernate.search.default.indexBase">/Users/chidinmaobioha/Desktop/rentrepo/RentEquip/indexes</beans:prop>
+			<beans:prop key="hibernate.search.default.indexBase">./var/lucene/indexes</beans:prop>
 			</beans:props>
 		</beans:property>
 	</beans:bean>
