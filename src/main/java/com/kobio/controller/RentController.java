@@ -58,7 +58,7 @@ public class RentController{
 	
 	@RequestMapping(value = "/menu", method = RequestMethod.GET)
 	public String defaultPage(ModelMap map) throws Exception {
-		//equipdao.indexEquipment();  
+		equipdao.indexEquipment();  
 		map.addAttribute("ser", getPrincipal());
 		map.addAttribute("equipments", this.equipdao.getEquipmentsbyUserid(getPrincipal().getID()));
 	

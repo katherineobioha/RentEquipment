@@ -60,7 +60,7 @@
 				<beans:prop key="hibernate.dialect">org.hibernate.dialect.SQLServerDialect
 				</beans:prop>
 				<beans:prop key="hibernate.show_sql">true</beans:prop>
-			<beans:prop key="hibernate.search.default.indexBase">/Users/chidinmaobioha/Documents/workspace/BooksAi/indexes</beans:prop>
+			<beans:prop key="hibernate.search.default.indexBase">/Users/chidinmaobioha/Desktop/rentrepo/RentEquip/indexes</beans:prop>
 			</beans:props>
 		</beans:property>
 	</beans:bean>
