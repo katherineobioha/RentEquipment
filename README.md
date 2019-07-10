@@ -1,5 +1,5 @@
 # RentEquipment
-RentEquipment  Advanced: MVC Spring, Spring Security, hibernate search (Lucene), MSSQL
+RentEquipment  Advanced: MVC Spring, Spring Security, Hibernate, Lucene Search, MSSQL, JDBC
 
 
 
